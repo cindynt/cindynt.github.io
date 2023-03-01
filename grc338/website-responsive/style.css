@@ -97,8 +97,19 @@ div.home-container {
     background-size: cover;
     position: relative;
     min-height: 100vh;
+    max-width: 70rem;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
 }
 
+div.container {
+    position: relative;
+    min-height: 100vh;
+    max-width: 70rem;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0rem 0rem 3rem 0rem;
+}
 /* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
 
 main {
@@ -112,29 +123,31 @@ img {
 
 header {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
     background: rgb(204, 204, 204);
     padding: 1rem 0.5rem;
 }
 
 h1 {
-    width: 100%;
+    width: 12rem;
 }
 
 h2,
 h3,
 h4 {
     font-weight: 600;
+    font-family: sans-serif;
 }
 
 h2 {
     font-size: 2rem;
-    margin: 2rem 0rem 0.5rem;
+    margin: 2rem 0rem 1.5rem;
 }
 
 h3 {
     font-size: 1.5rem;
-    margin: 2rem 0rem 0.5rem;
+    margin: 2rem 0rem 1.5rem;
 }
 
 a {
@@ -143,6 +156,8 @@ a {
 
 nav ul {
     text-align: right;
+    margin: 0.5rem;
+    text-transform: uppercase;
 }
 
 ul li {
@@ -155,7 +170,7 @@ figure {
 }
 
 main.menu ul {
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
 }
 
 main.menu ul li {
@@ -166,7 +181,7 @@ main.menu ul li {
 }
 
 p {
-    margin: 0rem 0rem 0rem;
+    margin: 0rem;
 }
 
 p.description {
@@ -194,6 +209,11 @@ nav ul li a {
     padding: 0.5em 0.5em 0.3em;
 }
 
+nav ul li.selected a {
+    background-color: #ffa500;
+    color: #ffffff;
+}
+
 p.slogan {
     font-size: 5rem;
     font-family: serif;
@@ -203,13 +223,19 @@ p.slogan {
 }
 
 footer {
-    position: static;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 3rem;
     box-sizing: border-box;
     padding: 1rem 0.5rem;
     background: rgb(252, 252, 0);
+}
+
+article {
+    background-color: rgb(0, 255, 255);
+    width: 30rem;
+    margin: auto auto;
 }
 
 address {
@@ -220,26 +246,7 @@ footer p {
     margin: 0;
 }
 
-nav ul li.selected a {
-    background-color: rgb(255, 135, 0);
-    color: rgb(255, 255, 255);
-}
-
-article {
-    background-color: rgb(0, 255, 255);
-}
-
-div.container {
-    position: relative;
-    min-height: 100vh;
-    background-color: rgb(255, 255, 255);
-}
-
 @media screen and (min-width: 60em) {
-    div {
-        margin: 0rem 3.5rem;
-    }
-
     article {
         margin: 0% 25%;
     }
