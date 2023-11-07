@@ -96,6 +96,7 @@ p {
 
 section {
     margin: 1em 0em;
+    border-bottom: 3px;
     border-bottom-style: solid;
     border-color: #121610; 
     padding: 1em 0em 0em;
