@@ -1,0 +1,162 @@
+/*CSS document*/
+html {
+    background-color: #121610;
+}
+body {
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: #EEEDEB;
+    color: #121610;
+    padding: 2em;
+    margin: 2em;
+}
+
+div.container {
+    max-width: 40rem;
+    margin: auto;
+    display: grid;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0em;
+}
+
+h1, h2, h3 {
+    font-family: "input-serif-condensed", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+a {
+    color: #121610;
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 2em;
+}
+
+nav a:hover {
+    color: #FF3406;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-color: #FF3406;
+}
+
+nav ul li{
+    display: inline;
+    margin: auto;
+    font-family: "input-serif-condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #FF3406;
+    margin: 1em 0em;
+}
+
+h3 {
+    color: #3F6E87;
+    font-size: 1.2rem;
+    margin: 0.5em 0em;
+ 
+}
+
+h3:hover {
+    color: #314956;
+}
+
+p {
+    margin: 0.5em 0em 1em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+section {
+    margin: 1em 0em;
+    border-bottom-style: solid;
+    border-color: #121610; 
+    padding: 1em 0em 0em;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    padding: 0.5em 0em;
+}
+
+footer {
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width:60em){
+    div.container {
+        max-width: 70rem;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 2em;
+    }
+    header {
+        grid-column: 1/3;
+    }
+    
+    section {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    
+    main {
+        grid-column: 1/2fr;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 1em;
+    }
+    
+    section.mainstory {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.mainstory a {
+        flex: 1 0 10em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.mainstory a figure{
+        flex: 1 0 10em;
+    }
+    
+    section.mainstory a h3 {
+        flex: 0 0 auto;
+        margin: auto;
+    }
+    
+    section.mainstory a figure img {
+        height: 95%;
+        object-fit: cover;
+    }
+} 
