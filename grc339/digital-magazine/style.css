@@ -47,6 +47,10 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    width: 100%;
+}
+
 h2 {
     font-size: 1.5rem;
     color: #FF3406;
@@ -202,6 +206,9 @@ figcaption.photogallery {
     color: #888;
 }
 
+h2.photogallery {
+    text-align: center;
+}
 
 #photo1:nth-of-type(1):checked ~ main figure:nth-of-type(1),
 #photo2:nth-of-type(2):checked ~ main figure:nth-of-type(2),
@@ -285,3 +292,62 @@ button:hover {
     background-color: #314956;
 }
 
+/* dark mode */
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: #314956;
+        color: #EEEDEB;
+    }
+    
+    h1 {  
+    background-image: url("reverb_logo_white.png");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    }
+    
+    h1 img {  
+    opacity: 0;  
+    }  
+    
+    a {
+        color: #EEEDEB;
+    }
+    
+    section {
+        border-color: #EEEDEB;
+    }
+    
+    h3 {
+        color: #EEEDEB;
+    }
+
+    h3:hover {
+        color: #FF3406;
+    }
+    
+    h2 {
+        color: #EEEDEB;
+    }
+    
+    h3.newsletter {
+        color: #FF3406;
+    }
+    
+    ul.newsletter li input[type="text"],
+    ul.newsletter li input[type="email"],
+    ul.newsletter li input[type="tel"]{
+        background-color: #314956;
+        border-bottom: 1px solid #EEEDEB;
+        color: #EEEDEB;
+    }
+    
+    button {
+    color: #3F6E87;
+    background-color: #EEEDEB;
+    }
+
+    button:hover {
+        background-color: #FF3406;
+        color: #EEEDEB;
+    }
+}
