@@ -181,12 +181,12 @@ nav ul li{
 /* photo gallery */
 div.photogallery {
     margin: auto;
-    max-width: 40rem;
+    max-width: 65rem;
 }
 
 main.photogallery {
     margin: auto;
-    max-width: 40rem;
+    max-width: 65rem;
     position: relative;
     overflow: hidden;
     padding-bottom: calc(100% + 4em);
